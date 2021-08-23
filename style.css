@@ -1,16 +1,18 @@
-
+main {
+  padding-bottom: 10%;
+}
 h1 {
   text-align: center;
 }
 #container {
   display: grid;
-  height: 960px;
-  width: 960px;
+  height: 600px;
+  width: 600px;
   background-color: white;
   border: ridge;
+  transform: translate(40%);
 }
 .square {
   border: none;
   border-color: silver;
-
 }
