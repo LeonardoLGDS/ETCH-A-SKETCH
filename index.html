@@ -1,10 +1,17 @@
 <!DOCTYPE HTML>
 <html>
 <style></style>
-<main>
+<main style="background-color: silver;">
+<h1>Etch-A-Sketch</h1>
 
-<div>
-</div>
+<form>
+  <label>Grid size: <span id="slider_value"></span><br></label>
+  <input id="sizeSlider" type="range" value="16" min="1" max="64" oninput="show_value(this.value)">
+</form>
+
+<p><button onclick="eraseScreen()">Clear</button></p>
+
+<div id="container"></div>
 
 </main>
 
