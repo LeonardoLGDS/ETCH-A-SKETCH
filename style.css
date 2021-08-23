@@ -1,1 +1,16 @@
 
+h1 {
+  text-align: center;
+}
+#container {
+  display: grid;
+  height: 960px;
+  width: 960px;
+  background-color: white;
+  border: ridge;
+}
+.square {
+  border: none;
+  border-color: silver;
+
+}
