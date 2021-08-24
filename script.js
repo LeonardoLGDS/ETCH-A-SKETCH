@@ -1,45 +1,45 @@
 grid = document.querySelector("#container");
 
-function show_value(x)
-{
-	
-	removeAllChildNodes(document.querySelector("#container"));
+function show_value(x) {
 
-	document.getElementById("slider_value").innerHTML = x;
-  let gridSize = x;
+    removeAllChildNodes(document.querySelector("#container"));
 
-  document.querySelector("#container").style.gridTemplateColumns = "";
-  document.querySelector("#container").style.gridTemplateRows = "";
+    document.getElementById("slider_value").innerHTML = x;
+    let gridSize = x;
 
-  document.querySelector("#container").style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
-  document.querySelector("#container").style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
+    document.querySelector("#container").style.gridTemplateColumns = "";
+    document.querySelector("#container").style.gridTemplateRows = "";
 
-  for(let i = 0; i < (gridSize * gridSize); i++) {
-    moreSqr = document.createElement("div");
-    moreSqr.classList.add("square"); 
-    grid.appendChild(moreSqr);
+    document.querySelector("#container").style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
+    document.querySelector("#container").style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
 
-    let squares = document.querySelectorAll(".square");
+    for (let i = 0; i < (gridSize * gridSize); i++) {
+        moreSqr = document.createElement("div");
+        moreSqr.classList.add("square");
+        grid.appendChild(moreSqr);
 
-  /*   squares[i].onmouseover = () => {
-    squares[i].style.backgroundColor = "black"
-    }; */
+        let squares = document.querySelectorAll(".square");
 
-    squares[i].onmouseover = () => {
-    squares[i].style.backgroundColor = "black"
-    };
+        /*   squares[i].onmouseover = () => {
+          squares[i].style.backgroundColor = "black"
+          }; */
 
-  }
+        squares[i].onmouseover = () => {
+            squares[i].style.backgroundColor = "black"
+        };
+
+    }
 }
 
 function removeAllChildNodes(parent) {
-	while (parent.firstChild) {
- 	parent.removeChild(parent.firstChild);
-	}
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
 }
+
 function eraseScreen() {
-	let squares = document.querySelectorAll(".square");
-  for(let i = 0; i < squares.length; i++) {
-  	squares[i].style.backgroundColor = "white";
-  }
+    let squares = document.querySelectorAll(".square");
+    for (let i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = "white";
+    }
 }

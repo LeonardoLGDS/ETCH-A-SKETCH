@@ -1,18 +1,22 @@
 main {
-  padding-bottom: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-h1 {
-  text-align: center;
-}
+
 #container {
-  display: grid;
-  height: 600px;
-  width: 600px;
-  background-color: white;
-  border: ridge;
-  transform: translate(40%);
+    display: grid;
+    justify-content: center;
+    height: 65vh;
+    width: 65vh;
+    background-color: white;
+    border: ridge;
+    margin: 0 auto 0 auto;
 }
+
 .square {
-  border: none;
-  border-color: silver;
+    border: none;
+    border-color: silver;
 }
